@@ -2,5 +2,6 @@
 #define CSC3054_H
 
 int printNum(int num);
+int printNumLineFeed(int num);
 
 #endif
