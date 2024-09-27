@@ -3,11 +3,13 @@
 .text
 .global _start
 _start:
+    # load 4 and 5 into scratch registers
  	li x5, 4
 	li x6, 5
+    # add them together
 	add x4, x5, x6
 	
-	# call printNum
+	# call printNum, load first function argument w/ sum
 	add a0, x0, x4	
 	jal printNum // note with void return type just this format
 	
