@@ -12,6 +12,9 @@
 _start:
     la x5, value1
     lw x28, 0(x5)
+    # Note multiple la instructions will require you to use
+    # the -no-relax option with the linker to force use of 
+    # auipc instead of adjustments to the gp register
     la x6, value2
     lw x29, 0(x6)
     blt x28, x29, lessthan
