@@ -34,3 +34,8 @@ void _putchar(char c) {
 // unsigned char *uart = (unsigned char*)0x10000000; 
 does not seem to work even though that's what the device tree dump for spike
 gives me
+
+To use in assembly code (call printNum)
+        # call printNum
+        add a0, x0, x4  // a0 maps to x10, first argument parameter
+        jal printNum // note with void return type just this format
