@@ -6,6 +6,10 @@ int printNum(int num) {
    return 0;
 }
 
+float printFloat(float num) {
+    printf("%f", num);
+}
+
 int printNumLineFeed(int num) {
 
     printf_("%d\n", num);

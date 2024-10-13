@@ -3,5 +3,6 @@
 
 int printNum(int num);
 int printNumLineFeed(int num);
+float printFloat(float num);
 
 #endif
